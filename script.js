@@ -135,3 +135,25 @@ for (let i=0; i<5; i++) {
 for (let i=0; i<5; i+=2) {
     console.log('asf');
 }
+for (let i=0; i<5; i+=2.5) {
+    console.log('i is:', i);
+    //just does when i is 0 and 2.5
+}
+
+const hats = ['cowboy hat', 'stocking cap', 'top hat', 'baseball cap', 'beanie', 'bowler hat'];
+//i don't have any comments here
+for (let i=0; i<hats.length; i++) {
+    console.log('a ' + hats[i] + ' is a type of hat');
+}
+for (let i of hats) { //this one has i being an element of hats
+    console.log('a ' + i + ' is a type of hat');
+}
+for (i in hats) { //this one has i being a number (INteger)
+    console.log('a ' + hats[i] + ' is a type of hat');
+}
+for (let i=1; i<hats.length; i++) { //skip first one
+    console.log('a ' + hats[i] + ' is a type of hat');
+}
+for (let i=1; i<hats.length; i+=2) { //do every other one
+    console.log('a ' + hats[i] + ' is a type of hat');
+}
